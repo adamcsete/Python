@@ -10,7 +10,7 @@ def pascal_triangle():
 			print (" ",end="")
 		szam = 1
 		for j in range(i+1):
-			print(str(szam) + " ", end = "")
+			print(int(szam)," ", end = "")
 			szam = szam * (i - j) / (j + 1)
 		print("\n", end = "")
 
