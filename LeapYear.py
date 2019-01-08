@@ -18,7 +18,7 @@ def LeapYear():
             else:
                 lyr=year
                 break
-        print(lyr)
+        print(lyr," ",end="")
         year+=1
 
 LeapYear()
