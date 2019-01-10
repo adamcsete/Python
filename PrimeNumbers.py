@@ -1,5 +1,5 @@
 def PrimeNumbers():
-    counter = int(input("Number of the first prime numbers: "))
+    counter = int(input("Number of the requested prime numbers: "))
     ct = 0
     prime = 1
     while ct<counter:
