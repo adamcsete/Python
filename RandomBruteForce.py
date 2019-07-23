@@ -7,6 +7,7 @@ class RandomBruteForce:
         # Creating variables
         code = ""
         checker = set()
+        diffcounter = 0
         counter = 0
 
         # Creating the code to be broken - code contains 4 digits
@@ -18,19 +19,20 @@ class RandomBruteForce:
 
         # Actual forcing code
         while True:
+            counter += 1
             alter = ""
             for i in range(4):
                 alter = alter + str(random.randint(0, 9))
             if alter not in checker:
                 checker.add(alter)
-                counter += 1
+                diffcounter += 1
                 print("The code is: " + code + ", " + "the guess is: " + alter)
             if alter == code:
                 break
 
         # Time when the forcing ended
         time2 = datetime.datetime.now()
-        print("\nNumber of attempts: ", counter, "\nStarted: ", time1, "\nEnded:",  time2)
+        print("\nNumber of attempts: ", counter, "\nNumber of different attempts: ", diffcounter, "\nStarted: ", time1, "\nEnded:",  time2)
 
 
 RandomBruteForce()
