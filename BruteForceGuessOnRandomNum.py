@@ -35,4 +35,4 @@ class BruteForceGuessOnRandomNum:
         print("\nNumber of attempts: ", counter, "\nNumber of different attempts: ", diffcounter, "\nStarted: ", time1, "\nEnded:",  time2)
 
 
-RandomBruteForce()
+BruteForceGuessOnRandomNum()
