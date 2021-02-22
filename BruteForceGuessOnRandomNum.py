@@ -2,7 +2,7 @@ import random
 import datetime
 
 
-class RandomBruteForce:
+class BruteForceGuessOnRandomNum:
     def __init__(self):
         # Creating variables
         code = ""
